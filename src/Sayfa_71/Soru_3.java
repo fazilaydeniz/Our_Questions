@@ -4,22 +4,17 @@ import java.util.Scanner;
 
 public class Soru_3 {
     public static void main(String[] args) {
-       /* Soru 3- Kullanicidan bir sayi alin sayi tek ise negatif veya pozitif tek sayi
-        oldugunu yazdirin, sayi cift sayi ise 10’un tam kati olup olmadigini
-        yazdirin.
-        */
+        /*Soru 3- Kullanicidan bir sayi alin, sayi 3 ile bolunuyorsa ”Uc ile bolunebilen
+          sayi”, 5 ile bolunebiliyorsa “Bes ile bolunebilen sayi” yazdirin.
+         */
 
-        Scanner scan= new Scanner(System.in);
-        System.out.println("Lütfen bir sayı giriniz");
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Lütfen bir tamsayı giriniz");
         int sayi= scan.nextInt();
 
-        if(!(sayi%2==0) && sayi>0){
-            System.out.println("Girdiğiniz sayı pozitif bir tek sayıdır");
-        } else if (!(sayi%2==0) && sayi<0) {
-            System.out.println("Girdiğiniz sayı negatif bir tek sayıdır");
+        if (sayi%3==0) System.out.println("Girdiğiniz sayı 3 ile tam bölünebilen bir sayıdır.");
+        if (sayi%5==0) System.out.println("Girdiğiniz sayı 5 ile tam bölünebilen bir sayıdır.");
+        else System.out.println("Girdiğiniz sayı 3 ve 5 ile tam bölünebilen bir sayı değildir.");
 
-        } if (sayi%2==0 && sayi%10==0) {
-            System.out.println("Girdiğiniz sayı 10'un katı olan bir çift sayıdır");
-        }
     }
 }

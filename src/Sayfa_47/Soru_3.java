@@ -4,17 +4,18 @@ import java.util.Scanner;
 
 public class Soru_3 {
     public static void main(String[] args) {
-        /*Soru 3- Kullanicidan bir sayi alin, sayi 3 ile bolunuyorsa ”Uc ile bolunebilen
-          sayi”, 5 ile bolunebiliyorsa “Bes ile bolunebilen sayi” yazdirin.
-         */
+        //Soru 3- Kullanicidan bir sayi alin, kullanici kac degerini girerse girsin, o sayiyi -128
+        //le 127 arasindaki bir sayiya donusturup yazdirin.
 
-        Scanner scan=new Scanner(System.in);
-        System.out.println("Lütfen bir tamsayı giriniz");
-        int sayi= scan.nextInt();
+        Scanner scan= new Scanner(System.in);
 
-        if (sayi%3==0) System.out.println("Girdiğiniz sayı 3 ile tam bölünebilen bir sayıdır.");
-        if (sayi%5==0) System.out.println("Girdiğiniz sayı 5 ile tam bölünebilen bir sayıdır.");
-        else System.out.println("Girdiğiniz sayı 3 ve 5 ile tam bölünebilen bir sayı değildir.");
+        System.out.println("Lütfen bir sayı giriniz");
+
+        int girilensayi= scan.nextInt();
+
+        byte donusensayi=(byte)girilensayi;
+
+        System.out.println("Girilen sayının " + girilensayi + "dönüşmüş hali :" + donusensayi);
 
     }
 }

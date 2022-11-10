@@ -1,19 +1,13 @@
 package Sayfa_47;
 
-import java.util.Scanner;
-
 public class Soru_1 {
     public static void main(String[] args) {
-        // Soru 1- Kullanicidan bir sayi isteyin, sayiyi kontrol edip 5 ile bolunebiliyorsa
-        // “Sayi 5’in tam kati” yazdirin.
+        //Soru 1- Int olarak verilen 3 degerin ortalamasini double olarak yazdiran bir kod yazin
 
-        Scanner scan= new Scanner(System.in);
+        double sayi1=14.5;
+        double sayi2=30.5;
+        double sayi3=45;
 
-        System.out.println("Lütfen bir sayı giriniz");
-
-        double sayi= scan.nextDouble();
-
-        if (sayi%5==0) System.out.println("Girdiğiniz sayı 5'in tam katı bir sayıdır");
-        else System.out.println("Girdiğiniz sayı 5'in tam katı bir sayı değildir");
+        System.out.println("Girilen değerlerin ortalaması :" + (sayi1+sayi2+sayi3)/3);
     }
 }

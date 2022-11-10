@@ -4,37 +4,33 @@ import java.util.Scanner;
 
 public class Soru_2 {
     public static void main(String[] args) {
-        /*Soru 3- Kullanicidan aldigi urun adedi ve ve liste fiyatini alin, kullaniciya musteri
-karti olup olmadigini sorun. Musteri karti varsa 10 urunden fazla alirsa
-%20, yoksa %15 indirim yapin, Musteri karti yoksa 10 urunden fazla
-alirsa %15, yoksa %10 indirim yapin
-         */
+        //Soru 2- Kullanicidan bir harf alin, harf ile baslayan bir ay varsa yazdirin.
+        //  NOT: Buyuk harf, kucuk harf hassasiyeti olmasin.
+        // Kullanici o veya O yazdiginda output Ocak olsun.
 
         Scanner scan= new Scanner(System.in);
-        System.out.println("Lütfen ürün adedinizi giriniz");
-        int urunAdedi = scan.nextInt();
-        System.out.println("Lütfen liste fiyatını giriniz");
-        double listeFiyati= scan.nextDouble();
-        double toplamfiyat= 0;
-        System.out.println("Müşteri kartınız varsa 1'i +" +
-                " yoksa 2'yi tuşlayınız");
-        int musterikarti= scan.nextInt();
+        System.out.println("Lütfen bir harf giriniz");
+        char harf= scan.next().charAt(0);
 
-        //Kart varsa
+        if (harf=='o'|| harf=='O') System.out.println("Ocak");
+        if (harf=='s'|| harf=='S') System.out.println("Şubat");
+        if (harf=='m'|| harf=='M') System.out.println("Mart veya Mayıs");
+        if (harf=='n'|| harf=='N') System.out.println("Nisan");
+        if (harf=='h'|| harf=='H') System.out.println("Haziran");
+        if (harf=='t'|| harf=='T') System.out.println("Temmuz");
+        if (harf=='a'|| harf=='A') System.out.println("Ağustos veya Aralık");
+        if (harf=='e'|| harf=='E') System.out.println("Eylül veya Ekim");
+        if (harf=='k'|| harf=='K') System.out.println("Kasım");
 
-        if(musterikarti==1 && urunAdedi>=10) {
-            toplamfiyat = urunAdedi * listeFiyati * (0.8);
-            System.out.println("%20 indirimli toplam fiyat :" + toplamfiyat);
-        } else if (musterikarti==1 && urunAdedi<10) {
-            toplamfiyat = urunAdedi * listeFiyati * (0.85);
-            System.out.println("%15 indirimli toplam fiyat :" + toplamfiyat);
-        } else if (musterikarti==2 && urunAdedi>=10) {
-            toplamfiyat = urunAdedi * listeFiyati * (0.85);
-            System.out.println("%15 indirimli toplam fiyat :" + toplamfiyat);
-        } else if (musterikarti==2 && urunAdedi<10) {
-            toplamfiyat = urunAdedi * listeFiyati * (0.90);
-            System.out.println("%10 indirimli toplam fiyat :" + toplamfiyat);
-        }else System.out.println("Hatalı giriş yaptınız");
+      /*
+             String str1= "123";
+             String str2= "12";
+
+        // str1 ve str2'nin degerlerini matematiksel olarak toplayin
+        System.out.println(str1 + str2); //Böyle toplanırsa 12312 sonucunu verir.
+        System.out.println(Integer.parseInt(str1)+Integer.parseInt(str2));//Şeklinde yazarsak 135 sonucunu verir.
+
+        */
     }
 }
 

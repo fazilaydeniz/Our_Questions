@@ -4,26 +4,17 @@ import java.util.Scanner;
 
 public class Soru_5 {
     public static void main(String[] args) {
-        /*Soru 5- Kullanicidan notunu alin 50 veya daha buyukse ”Sinifi Gectin”, 50’den
-        //kucukse “Maalesef kaldin” yazdirin.
+        //Soru 5- Kullanicidan bir double, bir tamsayi alin, double sayiyi ikinci sayiya bolun
+        //ve bolum isleminin sonucununun tamsayi kismini yazdirin.
 
         Scanner scan=new Scanner(System.in);
-        System.out.println("Aldığınız notu giriniz");
-        int aldıgıNot= scan.nextInt();
+        System.out.println("Lütfen önce bir tam sayı, sonra bir de ondalıklı sayı giriniz");
 
-        if (aldıgıNot>=50) System.out.println("Sınıfı geçtiniz");
-        if (aldıgıNot<50) System.out.println("Malesef sınıfta kaldınız");
-        */
-        Scanner scan=new Scanner(System.in);
-        System.out.println("Aldığınız notu giriniz");
-        int aldıgıNot= scan.nextInt();
+        int sayi1= scan.nextInt();
+        double sayi2= scan.nextDouble();
 
-        if(aldıgıNot>=85 && aldıgıNot<=100) System.out.println("Takdir Belgesi almaya hak kazanarak sınıfınızı geçtiniz");
-        else if (aldıgıNot>=70 && aldıgıNot<=85) System.out.println("Teşekkür Belgesi almaya hak kazanarak sınıfınızı geçtiniz");
-        else if(aldıgıNot>=50 && aldıgıNot<=70) System.out.println("Sınıfınızı geçtiniz");
-        else if(aldıgıNot<50) System.out.println("Sınıfta kaldınız");
-        else System.out.println("Yanlış giriş yaptınız");
+        double sonuc= sayi2/sayi1;
 
+        System.out.println((int)sonuc);
     }
-
 }

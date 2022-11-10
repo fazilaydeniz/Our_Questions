@@ -4,25 +4,17 @@ import java.util.Scanner;
 
 public class Soru_4 {
     public static void main(String[] args) {
-        /*Soru 4- Kullanicidan gunu ismini girmesini isteyin, girilen gun hafta ici bir gun ise
-        “Simdi calisma zamani tatile .. gun var” seklinde hafta sonu tatiline kac
-        gun kaldigini yazdirin, girilen gun hafta sonu ise “Simdi dinlenme
-        zamani” yazdirin.
-        */
+        /*Soru 4- Kullanicidan bir ucgenin 3 kenar uzunlugunu alin, ucgen eskenar ise
+                  “Eskenar ucgen” yazdirin.
+         */
 
         Scanner scan= new Scanner(System.in);
-        System.out.println("Bugün günlerden ne? Lütfen yazınız");
-        String gun= scan.next();
+        System.out.println("Lütfen bir üçgen için 3 kenar uzunluğu giriniz");
+        double kenar1= scan.nextDouble();
+        double kenar2= scan.nextDouble();
+        double kenar3= scan.nextDouble();
 
-        if(gun.equalsIgnoreCase("pazartesi")) System.out.println("hafta sonu tatiline 5 gun var");
-        if(gun.equalsIgnoreCase("salı")) System.out.println("hafta sonu tatiline 4 gun var");
-        if(gun.equalsIgnoreCase("çarşamba")) System.out.println("hafta sonu tatiline 3 gun var");
-        if(gun.equalsIgnoreCase("perşembe")) System.out.println("hafta sonu tatiline 2 gun var");
-        if(gun.equalsIgnoreCase("cuma")) System.out.println("hafta sonu tatiline 1 gun var");
-        if(gun.equalsIgnoreCase("cumartesi")) System.out.println("Şimdi dinlenme zamanı");
-        if(gun.equalsIgnoreCase("pazar")) System.out.println("Şimdi dinlenme zamanı");
-
-
-
+        if ((kenar1==kenar2) && (kenar2==kenar3)) System.out.println("Bu bir eşkenar üçgendir");
+        else System.out.println("Bu bir eşkenar üçgen değildir.");
     }
 }

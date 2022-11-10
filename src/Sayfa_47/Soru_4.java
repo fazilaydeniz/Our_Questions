@@ -4,17 +4,20 @@ import java.util.Scanner;
 
 public class Soru_4 {
     public static void main(String[] args) {
-        /*Soru 4- Kullanicidan bir ucgenin 3 kenar uzunlugunu alin, ucgen eskenar ise
-                  “Eskenar ucgen” yazdirin.
-         */
+        //Soru 4- Kullanicidan iki double sayi alin, ilk sayiyi ikinci sayiya bolun ve bolum
+        //isleminin sonucununun tamsayi kismini yazdirin
 
         Scanner scan= new Scanner(System.in);
-        System.out.println("Lütfen bir üçgen için 3 kenar uzunluğu giriniz");
-        double kenar1= scan.nextDouble();
-        double kenar2= scan.nextDouble();
-        double kenar3= scan.nextDouble();
+        System.out.println("Lütfen iki adet ondalıklı sayı giriniz");
 
-        if ((kenar1==kenar2) && (kenar2==kenar3)) System.out.println("Bu bir eşkenar üçgendir");
-        else System.out.println("Bu bir eşkenar üçgen değildir.");
+        double sayi1= scan.nextDouble();
+        double sayi2= scan.nextDouble();
+
+        double sonuc=sayi1/ sayi2;
+
+        System.out.println((int)sonuc);
+
+
+
     }
 }

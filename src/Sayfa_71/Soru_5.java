@@ -4,25 +4,26 @@ import java.util.Scanner;
 
 public class Soru_5 {
     public static void main(String[] args) {
-        /*Soru 2- Kullanicinin kilo(kg) ve boyunu(cm) isteyip vucut kitle endeksini
-        hesaplayin (kilo*10000 / (boy *boy)) vucut kitle endeksi 30’dan buyukse
-        obez, 25-30 arasi ise kilolu, 20-25 arasi ise normal, 20’den kucukse
-        zayif yazdirin.
-            */
-        Scanner scan= new Scanner(System.in);
-        System.out.println("Lütfen kilonuzu giriniz");
-        double agirlik= scan.nextDouble();
-        System.out.println("lütfen boyunuzu cm olarak giriniz");
-        int boy= scan.nextInt();
+        /*Soru 5- Kullanicidan notunu alin 50 veya daha buyukse ”Sinifi Gectin”, 50’den
+        //kucukse “Maalesef kaldin” yazdirin.
 
-        double vki=(agirlik*10000/(boy*boy));
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Aldığınız notu giriniz");
+        int aldıgıNot= scan.nextInt();
 
-        if (vki>30) System.out.println("Obez");
-        else if (vki>25) System.out.println("Kilolu");
-        else if (vki>20) System.out.println("Normal");
-        else if (vki<20) System.out.println("Zayıf");
-        else System.out.println("Hatalı giriş yaptınız");
+        if (aldıgıNot>=50) System.out.println("Sınıfı geçtiniz");
+        if (aldıgıNot<50) System.out.println("Malesef sınıfta kaldınız");
+        */
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Aldığınız notu giriniz");
+        int aldıgıNot= scan.nextInt();
 
+        if(aldıgıNot>=85 && aldıgıNot<=100) System.out.println("Takdir Belgesi almaya hak kazanarak sınıfınızı geçtiniz");
+        else if (aldıgıNot>=70 && aldıgıNot<=85) System.out.println("Teşekkür Belgesi almaya hak kazanarak sınıfınızı geçtiniz");
+        else if(aldıgıNot>=50 && aldıgıNot<=70) System.out.println("Sınıfınızı geçtiniz");
+        else if(aldıgıNot<50) System.out.println("Sınıfta kaldınız");
+        else System.out.println("Yanlış giriş yaptınız");
 
     }
+
 }
