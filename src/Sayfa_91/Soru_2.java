@@ -1,8 +1,80 @@
 package Sayfa_91;
 
+import java.util.Scanner;
+
 public class Soru_2 {
-    //Kullanicidan ay numarasini alip ay ismini yazdirin
+    //Kullanicidan iki basamaklı bir rakam alip, rakami yaziyla yazdirin.
     public static void main(String[] args) {
 
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Lütfen bir rakam giriniz");
+        int sayi = scan.nextInt();
+
+        /* switch-case yapısını uzatarak
+         ıstedigimiz basamaklı sayıyı yazdırabiliriz.*/
+
+        int birler = sayi % 10;
+        int onlar = sayi / 10;
+
+        switch (onlar) {
+            case 1:
+                System.out.print("On");
+                break;
+            case 2:
+                System.out.print("Yirmi");
+                break;
+            case 3:
+                System.out.print("Otuz");
+                break;
+            case 4:
+                System.out.print("Kırk");
+                break;
+            case 5:
+                System.out.print("Elli");
+                break;
+            case 6:
+                System.out.print("Altmıs");
+                break;
+            case 7:
+                System.out.print("Yetmis");
+                break;
+            case 8:
+                System.out.print("Seksen");
+                break;
+            case 9:
+                System.out.print("Doksan");
+                break;
+        }
+        switch (birler) {
+            case 1:
+                System.out.print(" bir");
+                break;
+            case 2:
+                System.out.print(" iki");
+                break;
+            case 3:
+                System.out.print(" üç");
+                break;
+            case 4:
+                System.out.print(" dört");
+                break;
+            case 5:
+                System.out.print(" beş");
+                break;
+            case 6:
+                System.out.print(" altı");
+                break;
+            case 7:
+                System.out.print(" yedi");
+                break;
+            case 8:
+                System.out.print(" sekiz");
+                break;
+            case 9:
+                System.out.print(" dokuz");
+                break;
+
+
+        }
     }
 }
