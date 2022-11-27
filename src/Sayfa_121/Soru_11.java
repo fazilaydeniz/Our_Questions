@@ -25,7 +25,7 @@ public class Soru_11 {
             each=each.replaceAll("[A-Z,a-z,$,€,£,₺]","");
             toplam+=Double.parseDouble(each);
         }
-        System.out.printf("€ "+"%.2f",toplam);
+        System.out.printf("€ "+ "%.2f",toplam);
 
 
 

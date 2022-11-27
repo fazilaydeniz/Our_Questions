@@ -19,6 +19,7 @@ public class Soru_2 {
         input2=input2.substring(0,2)+"."+ input2.substring(2);
         output=Double.parseDouble(input1) + Double.parseDouble(input2);
 
-        System.out.printf("€ "+"%.2f",output);
+        System.out.printf("%.2f", output );
+        System.out.print(" €");
     }
 }
